@@ -3,8 +3,8 @@ var PORT = process.env.PORT;
 var express = require('express');
 var app = express();
 
-app.listen(3000, function() {
-	console.log('Server running, port 3000');
+app.listen(PORT, function() {
+	console.log('Server running, port ${PORT}`');
 });
 
 app.get('/', function(request, response) {
